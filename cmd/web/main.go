@@ -12,7 +12,7 @@ import (
 )
 
 const portNumber = ":8080"
-
+// go run .\cmd\web\main.go .\cmd\web\middleware.go .\cmd\web\routes.go
 var app config.AppConfig
 var session *scs.SessionManager
 
