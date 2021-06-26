@@ -2,16 +2,18 @@ package main
 
 import (
 	"fmt"
-	"github.com/alexedwards/scs/v2"
-	"github.com/mrazen/bookings/pkg/config"
-	"github.com/mrazen/bookings/pkg/handlers"
-	"github.com/mrazen/bookings/pkg/render"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/alexedwards/scs/v2"
+	"github.com/mrazen/bookings/internal/config"
+	"github.com/mrazen/bookings/internal/handlers"
+	"github.com/mrazen/bookings/internal/render"
 )
 
 const portNumber = ":8080"
+
 // go run .\cmd\web\main.go .\cmd\web\middleware.go .\cmd\web\routes.go
 var app config.AppConfig
 var session *scs.SessionManager
