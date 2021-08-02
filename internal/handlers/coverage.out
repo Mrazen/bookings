@@ -1,0 +1,22 @@
+mode: set
+github.com/mrazen/bookings/internal/handlers/handlers.go:23.47,27.2 1 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:30.33,32.2 1 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:35.67,40.2 3 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:43.68,55.2 5 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:58.74,67.2 4 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:70.78,72.16 2 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:76.2,89.19 6 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:99.2,100.66 2 0
+github.com/mrazen/bookings/internal/handlers/handlers.go:72.16,75.3 2 0
+github.com/mrazen/bookings/internal/handlers/handlers.go:89.19,98.3 4 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:104.71,106.2 1 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:109.69,111.2 1 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:114.75,116.2 1 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:119.79,124.2 3 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:132.79,139.16 3 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:143.2,144.14 2 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:139.16,141.3 1 0
+github.com/mrazen/bookings/internal/handlers/handlers.go:148.70,150.2 1 1
+github.com/mrazen/bookings/internal/handlers/handlers.go:153.81,156.9 2 0
+github.com/mrazen/bookings/internal/handlers/handlers.go:163.2,168.4 4 0
+github.com/mrazen/bookings/internal/handlers/handlers.go:156.9,161.3 4 0
