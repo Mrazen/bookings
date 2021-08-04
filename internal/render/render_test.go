@@ -24,7 +24,7 @@ func TestAddDefaulData(t *testing.T) {
 }
 
 func TestRenderTemplate(t *testing.T) {
-	pathToTemplate = "../../templates"
+	pathToTemplates = "../../templates"
 	tc, err := CreateTemplateCache()
 	if err != nil {
 		t.Error(err)
@@ -65,7 +65,7 @@ func TestNewTemplates(t *testing.T) {
 }
 
 func TestCreateTemplateCache(t *testing.T) {
-	pathToTemplate = "../../templates"
+	pathToTemplates = "../../templates"
 	_, err := CreateTemplateCache()
 	if err != nil {
 		t.Error(err)

@@ -2,9 +2,7 @@ package handlers
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
-	"log"
 	"net/http"
 
 	"github.com/mrazen/bookings/internal/config"
@@ -59,8 +57,6 @@ func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
 // PostReservation handles the posting of a reservation form
 func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
 	err := r.ParseForm()
-
-	err = errors.New("thsi is an error")
 	if err != nil {
 		helpers.ServerError(w, err)
 		return
@@ -129,7 +125,8 @@ func (m *Repository) AvailabilityJSON(w http.ResponseWriter, r *http.Request) {
 
 	out, err := json.MarshalIndent(resp, "", "     ")
 	if err != nil {
-		log.Println(err)
+		helpers.ServerError(w, err)
+		return
 	}
 
 	w.Header().Set("Content-Type", "application/json")
@@ -146,7 +143,7 @@ func (m *Repository) ReservationSummary(w http.ResponseWriter, r *http.Request) 
 	reservation, ok := m.App.Session.Get(r.Context(), "reservation").(models.Reservation)
 	//fmt.Println(reservation)
 	if !ok {
-		log.Println("cannot get item from the session")
+		m.App.ErrorLog.Println("Can't ger error frokm session")
 		m.App.Session.Put(r.Context(), "error", "Can't get reservation from session")
 		http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 		return
